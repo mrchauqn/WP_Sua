@@ -1,0 +1,10 @@
+ $src1 = wp_get_attachment_image_src($images[0], array(439,342));
+        $src1 = $src1[0];
+        $src2 = wp_get_attachment_image_src($images[1], array(439,342));
+        $src2 = $src2[0];
+        $src3 = wp_get_attachment_image_src($images[2], array(439,342));
+        $src3 = $src3[0];
+        ?> 
+        <div class="product-view-main">
+            <div class="product-image">
+			<?php $thumb = get_home_url().'/thumbnail/timthumb.php?src='.$src1.'&w=440&h=340&zc=1' ?>
